@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:maxWidth="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/imageViewCard" android:layout_width="fill_parent" android:layout_height="@dimen/crooks_list_image_size_grid_height" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="?colorSurface" app:cardCornerRadius="8.0dip" app:strokeColor="@android:color/transparent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.material.card.MaterialCardView>
+    <com.harteg.crookcatcher.ui.IconView android:layout_gravity="center" android:id="@id/icon_video" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" app:backgroundTint="?colorPrimary" app:iconTint="?colorOnPrimary" app:imageDrawable="@drawable/play_arrow_24px" />
+    <com.harteg.crookcatcher.ui.IconView android:layout_gravity="center" android:id="@id/icon_audio" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" app:backgroundTint="?colorPrimary" app:iconTint="?colorOnPrimary" app:imageDrawable="@drawable/ic_mic_white_32dp" app:padding="6.0dip" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/image_checked" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:cardBackgroundColor="#4d222222" app:cardCornerRadius="8.0dip" app:strokeColor="?colorPrimary" app:strokeWidth="2.0dip" />
+</FrameLayout>

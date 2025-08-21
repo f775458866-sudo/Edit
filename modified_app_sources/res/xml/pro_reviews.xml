@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_1_text" android:summary="@string/review_1_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_2_text" android:summary="@string/review_2_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_3_text" android:summary="@string/review_3_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_4_text" android:summary="@string/review_4_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_5_text" android:summary="@string/review_5_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_6_text" android:summary="@string/review_6_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_7_text" android:summary="@string/review_7_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_10_text" android:summary="@string/review_10_author_date" />
+    <Preference android:layout="@layout/list_item_review" android:title="@string/review_11_text" android:summary="@string/review_11_author_date" />
+</PreferenceScreen>

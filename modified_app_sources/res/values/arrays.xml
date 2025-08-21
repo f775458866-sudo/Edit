@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_duration">
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_30</item>
+        <item>@string/action_never</item>
+    </string-array>
+    <string-array name="alarm_duration_values">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="cameraShutterDelay">
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>1600</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="features">
+        <item>@string/feature_take_picture</item>
+        <item>@string/feature_obtain_location</item>
+        <item>@string/feature_send_alert_email</item>
+        <item>@string/premium_feature_video</item>
+        <item>@string/premium_feature_drive</item>
+        <item>@string/premium_feature_back_facing_camera</item>
+        <item>@string/premium_feature_alarm</item>
+        <item>@string/premium_feature_alert_message</item>
+        <item>@string/premium_feature_fake_screen</item>
+        <item>@string/premium_feature_break_in</item>
+        <item>@string/premium_feature_email_subject</item>
+        <item>@string/premium_feature_app_lock</item>
+        <item>@string/premium_feature_disguise</item>
+        <item>@string/premium_feature_hide_notifications</item>
+        <item>@string/premium_feature_no_ads</item>
+    </string-array>
+    <string-array name="features_info">
+        <item>@string/feature_take_picture_sub</item>
+        <item>@string/feature_obtain_location_sub</item>
+        <item>@string/feature_send_alert_email_sub</item>
+        <item>@string/premium_feature_video_sub</item>
+        <item>@string/premium_feature_drive_sub</item>
+        <item>@string/premium_feature_back_facing_camera_sub</item>
+        <item>@string/premium_feature_alarm_sub</item>
+        <item>@string/premium_feature_alert_message_sub</item>
+        <item>@string/premium_feature_fake_screen_sub</item>
+        <item>@string/premium_feature_break_in_sub</item>
+        <item>@string/premium_feature_email_subject_sub</item>
+        <item>@string/premium_feature_app_lock_sub</item>
+        <item>@string/premium_feature_disguise_sub</item>
+        <item>@string/premium_feature_hide_notifications_sub</item>
+        <item>@string/premium_feature_no_ads_sub</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="lang_codes">
+        <item></item>
+        <item>ar</item>
+        <item>bn</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>fa</item>
+        <item>de</item>
+        <item>hi</item>
+        <item>id</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>pt</item>
+        <item>es</item>
+        <item>tr</item>
+    </string-array>
+    <string-array name="lang_flags">
+        <item></item>
+        <item>🇸🇦</item>
+        <item>🇧🇩</item>
+        <item>🇬🇧</item>
+        <item>🇫🇷</item>
+        <item>🇮🇷</item>
+        <item>🇩🇪</item>
+        <item>🇮🇳</item>
+        <item>🇮🇩</item>
+        <item>🇮🇹</item>
+        <item>🇯🇵</item>
+        <item>🇰🇷</item>
+        <item>🇵🇹</item>
+        <item>🇪🇸</item>
+        <item>🇹🇷</item>
+    </string-array>
+    <string-array name="lang_names">
+        <item>@string/system_default</item>
+        <item>🇸🇦 العربية</item>
+        <item>🇧🇩 বাংলা</item>
+        <item>🇬🇧 English</item>
+        <item>🇫🇷 Français</item>
+        <item>🇮🇷 فارسی</item>
+        <item>🇩🇪 Deutsch</item>
+        <item>🇮🇳 हिन्दी</item>
+        <item>🇮🇩 Bahasa Indonesia</item>
+        <item>🇮🇹 Italiano</item>
+        <item>🇯🇵 日本語</item>
+        <item>🇰🇷 한국어</item>
+        <item>🇵🇹 Português</item>
+        <item>🇪🇸 Español</item>
+        <item>🇹🇷 Türkçe</item>
+    </string-array>
+    <string-array name="licensesCodeAuthors">
+        <item>By Google Inc.</item>
+        <item>By Bump Technologies</item>
+        <item>By Chris Banes</item>
+        <item>By Apache Commons</item>
+        <item>By Oracle</item>
+        <item>By Hai Zhang</item>
+        <item>By kcochibili</item>
+        <item>By Hugo Gresse</item>
+        <item>By Ryan Gocal</item>
+        <item>By SoundBible</item>
+        <item>By Prabhakar Thota</item>
+        <item>By XomaDev</item>
+    </string-array>
+    <string-array name="licensesCodeLinks">
+        <item>https://source.android.com/</item>
+        <item>https://github.com/bumptech/glide</item>
+        <item>https://github.com/chrisbanes/PhotoView</item>
+        <item>http://commons.apache.org/proper/commons-io/</item>
+        <item>http://www.oracle.com/technetwork/java/javamail/index.html</item>
+        <item>https://github.com/zhanghai/PatternLock</item>
+        <item>https://github.com/kcochibili/TinyDB--Android-Shared-Preferences-Turbo</item>
+        <item>https://github.com/HugoGresse/AndroidVuMeter/</item>
+        <item>https://github.com/rgocal/Switchbar</item>
+        <item>http://soundbible.com/tags-alarm.html</item>
+        <item>https://github.com/myinnos/AppIconNameChanger</item>
+        <item>https://github.com/XomaDev/MIUI-autostart</item>
+    </string-array>
+    <string-array name="licensesCodeSources">
+        <item>The Android Open Source Project</item>
+        <item>Glide</item>
+        <item>PhotoView</item>
+        <item>Commons IO</item>
+        <item>Java Mail</item>
+        <item>PatternLock</item>
+        <item>TinyDB</item>
+        <item>VuMeterView</item>
+        <item>SwitchBar</item>
+        <item>Alarm sounds</item>
+        <item>AppIconNameChanger</item>
+        <item>MIUI-Autostart</item>
+    </string-array>
+    <array name="licensesOther" />
+    <array name="licensesOtherAuthors" />
+    <array name="licensesOtherLinks" />
+    <string-array name="licensesTranslations">
+        <item>Português</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="licensesTranslationsAuthors">
+        <item>By Lucas Campos</item>
+        <item>By Marcus Pierrat</item>
+        <item>By Jonás Perusquía Morales</item>
+        <item>By Angelo Geninatti</item>
+    </string-array>
+    <string-array name="max_file_size">
+        <item>5mb</item>
+        <item>10mb</item>
+        <item>20mb</item>
+        <item>50mb</item>
+    </string-array>
+    <string-array name="max_file_size_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="numberOfUnlockAttemptsNames">
+        <item>@string/number_of_unlock_attempts_1</item>
+        <item>@string/number_of_unlock_attempts_2</item>
+        <item>@string/number_of_unlock_attempts_3</item>
+        <item>@string/number_of_unlock_attempts_4</item>
+        <item>@string/number_of_unlock_attempts_5</item>
+    </string-array>
+    <string-array name="numberOfUnlockAttemptsValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="pictureRotation">
+        <item>Auto</item>
+        <item>0°</item>
+        <item>90°</item>
+        <item>180°</item>
+        <item>270°</item>
+    </string-array>
+    <string-array name="pictureRotationValues">
+        <item>Auto</item>
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+    <string-array name="picture_compression_titles">
+        <item>@string/picture_compression_auto</item>
+        <item>@string/picture_compression_high</item>
+        <item>@string/picture_compression_medium</item>
+        <item>@string/picture_compression_low</item>
+    </string-array>
+    <string-array name="picture_compression_values">
+        <item>-1</item>
+        <item>40</item>
+        <item>60</item>
+        <item>90</item>
+    </string-array>
+    <string-array name="picture_config">
+        <item>@string/config_picture_config_1F</item>
+        <item>@string/config_picture_config_2F</item>
+        <item>@string/config_picture_config_1F_1B</item>
+        <item>@string/config_picture_config_2F_2B</item>
+        <item>@string/config_picture_config_3F_1B</item>
+    </string-array>
+    <string-array name="picture_config_values">
+        <item>1</item>
+        <item>2</item>
+        <item>1:1</item>
+        <item>2:2</item>
+        <item>3:1</item>
+    </string-array>
+    <string-array name="recording_duration">
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+    </string-array>
+    <string-array name="recording_duration_values">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="sound_delay">
+        <item>@string/seconds_0</item>
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+    </string-array>
+    <string-array name="sound_delay_values">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="video_duration">
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_15</item>
+        <item>@string/seconds_20</item>
+    </string-array>
+    <string-array name="video_duration_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+</resources>

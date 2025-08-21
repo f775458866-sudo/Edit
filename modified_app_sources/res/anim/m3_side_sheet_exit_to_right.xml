@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.takisoft.preferencex.SimpleMenuPreference android:icon="@drawable/ic_pictures_white_32dp" android:persistent="true" android:entries="@array/picture_config" android:title="@string/config_picture_combination_title" android:key="key_picture_config" android:summary="%s" android:defaultValue="1" android:entryValues="@array/picture_config_values" />
+    <Preference android:icon="@drawable/ic_keyboard_arrow_down_32px" android:title="@string/advanced_settings" android:key="key_advanced_button" />
+    <PreferenceCategory android:key="key_advanced_category">
+        <androidx.preference.ListPreference android:persistent="true" android:entries="@array/picture_compression_titles" android:title="@string/picture_compression" android:key="key_picture_compression" android:defaultValue="-1" android:dialogMessage="@string/picture_compression_message" android:dialogLayout="@layout/list_preference" android:entryValues="@array/picture_compression_values" />
+        <com.takisoft.preferencex.SimpleMenuPreference android:persistent="true" android:entries="@array/pictureRotation" android:title="@string/config_picture_rotation_title" android:key="key_picturerotation" android:defaultValue="Auto" android:entryValues="@array/pictureRotationValues" />
+        <com.harteg.crookcatcher.preferences.ValueWidgetSliderPreference android:persistent="true" android:title="@string/config_shutter_delay_title" android:key="key_cameraShutterDelay" android:defaultValue="400" android:dialogTitle="@string/config_shutter_delay_title" android:dialogMessage="@string/config_shutter_delay_dialog_message" app:dialogValueTextMinEms="1" app:showResetButton="true" app:showWidget="false" app:valueSet="@array/cameraShutterDelay" app:valueSuffix="ms" />
+    </PreferenceCategory>
+</PreferenceScreen>

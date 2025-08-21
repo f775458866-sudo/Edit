@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/premium_preference_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/preference_item" />
+    </FrameLayout>
+    <include layout="@layout/preference_premium_badge" />
+</FrameLayout>

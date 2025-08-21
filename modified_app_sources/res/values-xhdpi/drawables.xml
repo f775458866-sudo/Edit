@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="exo_ic_forward">false</item>
+    <item type="drawable" name="exo_ic_speed">false</item>
+    <item type="drawable" name="exo_icon_rewind">false</item>
+    <item type="drawable" name="abc_scrubber_control_to_pressed_mtrl_005">false</item>
+</resources>

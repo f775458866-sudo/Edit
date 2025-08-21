@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.harteg.crookcatcher.preferences.InfoPreference android:icon="@drawable/ic_about_white_24dp" android:summary="@string/config_recording_info" android:order="1" />
+    <com.takisoft.preferencex.SimpleMenuPreference android:icon="@drawable/ic_mic_white_32dp" android:persistent="true" android:entries="@array/recording_duration" android:title="@string/config_recording_length" android:key="key_record_sound_duration" android:summary="%s" android:order="2" android:defaultValue="10" android:entryValues="@array/recording_duration_values" />
+    <Preference android:icon="@drawable/ic_keyboard_arrow_down_32px" android:title="@string/advanced_settings" android:key="key_advanced_button" android:order="4" />
+    <PreferenceCategory android:key="key_advanced_category" android:order="5">
+        <com.takisoft.preferencex.SimpleMenuPreference android:persistent="true" android:entries="@array/sound_delay" android:title="@string/delay_start_by" android:key="key_record_sound_delay" android:summary="%s" android:order="3" android:defaultValue="0" android:entryValues="@array/sound_delay_values" app:iconSpaceReserved="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

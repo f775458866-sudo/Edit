@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="animator" name="m3_btn_state_list_anim">false</item>
+    <item type="animator" name="m3_card_elevated_state_list_anim">false</item>
+    <item type="animator" name="m3_card_state_list_anim">false</item>
+    <item type="animator" name="m3_extended_fab_change_size_collapse_motion_spec">false</item>
+    <item type="animator" name="m3_extended_fab_show_motion_spec">false</item>
+    <item type="animator" name="mtrl_extended_fab_state_list_animator">false</item>
+</resources>

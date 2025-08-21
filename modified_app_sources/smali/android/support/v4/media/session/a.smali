@@ -1,0 +1,56 @@
+.class public interface abstract Landroid/support/v4/media/session/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/media/session/a$b;,
+        Landroid/support/v4/media/session/a$a;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract c()V
+.end method
+
+.method public abstract d(Ljava/util/List;)V
+.end method
+
+.method public abstract e()V
+.end method
+
+.method public abstract f(Landroid/support/v4/media/MediaMetadataCompat;)V
+.end method
+
+.method public abstract g(I)V
+.end method
+
+.method public abstract j(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+.end method
+
+.method public abstract l(Landroid/os/Bundle;)V
+.end method
+
+.method public abstract m(Z)V
+.end method
+
+.method public abstract n(Z)V
+.end method
+
+.method public abstract onEvent(Ljava/lang/String;Landroid/os/Bundle;)V
+.end method
+
+.method public abstract p(Ljava/lang/CharSequence;)V
+.end method
+
+.method public abstract r(Landroid/support/v4/media/session/PlaybackStateCompat;)V
+.end method
+
+.method public abstract w(I)V
+.end method

@@ -1,0 +1,27 @@
+.class public Lz7/l;
+.super Lz7/s;
+.source "SourceFile"
+
+
+# instance fields
+.field private g:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lz7/s;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public n(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lz7/l;->g:Ljava/lang/String;
+
+    return-void
+.end method

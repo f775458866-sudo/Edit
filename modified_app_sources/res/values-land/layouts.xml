@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="material_timepicker">false</item>
+    <item type="layout" name="mtrl_picker_header_dialog">false</item>
+</resources>

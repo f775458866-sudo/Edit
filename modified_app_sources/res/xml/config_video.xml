@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.harteg.crookcatcher.preferences.InfoPreference android:icon="@drawable/ic_about_white_24dp" android:summary="@string/config_videos_info" />
+    <com.takisoft.preferencex.SimpleMenuPreference android:icon="@drawable/baseline_videocam_32px" android:persistent="true" android:entries="@array/video_duration" android:title="@string/video_length" android:key="key_video_duration" android:summary="%s" android:defaultValue="10" android:entryValues="@array/video_duration_values" />
+    <Preference android:icon="@drawable/ic_keyboard_arrow_down_32px" android:title="@string/advanced_settings" android:key="key_advanced_button" />
+    <PreferenceCategory android:key="key_advanced_category">
+        <com.harteg.crookcatcher.preferences.VideoQualitySelector android:persistent="true" android:title="@string/video_quality" android:key="key_video_quality" android:summary="%s" android:defaultValue="SD" />
+        <com.takisoft.preferencex.SimpleMenuPreference android:persistent="true" android:entries="@array/sound_delay" android:title="@string/delay_start_by" android:key="key_video_delay" android:summary="%s" android:defaultValue="0" android:entryValues="@array/sound_delay_values" />
+        <com.takisoft.preferencex.SimpleMenuPreference android:persistent="true" android:entries="@array/max_file_size" android:title="@string/max_file_size" android:key="key_video_max_size" android:summary="%s" android:defaultValue="20" android:entryValues="@array/max_file_size_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

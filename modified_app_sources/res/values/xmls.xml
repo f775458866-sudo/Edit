@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="xml" name="config_notifications">false</item>
+    <item type="xml" name="config_picture">false</item>
+    <item type="xml" name="faq">false</item>
+    <item type="xml" name="locales_config">false</item>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="0.0dip" android:layout_height="@dimen/crooks_list_image_size_grid_height" android:layout_margin="4.0dip" android:layout_weight="1.0" layout="@layout/crooks_empty_item" />
+                <include android:layout_width="0.0dip" android:layout_height="@dimen/crooks_list_image_size_grid_height" android:layout_margin="4.0dip" android:layout_weight="1.0" layout="@layout/crooks_empty_item" />
+                <include android:layout_width="0.0dip" android:layout_height="@dimen/crooks_list_image_size_grid_height" android:layout_margin="4.0dip" android:layout_weight="1.0" layout="@layout/crooks_empty_item" />
+            </LinearLayout>
+            <View android:background="@drawable/fade_out_gradient_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-64.0dip" android:text="@string/crooks_list_empty" android:alpha="0.5" />
+        <android.widget.Space android:layout_width="fill_parent" android:layout_height="128.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/crooks_empty_view_issues" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceTitleMedium" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/not_working" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="?materialCardViewOutlinedStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_about_white_24dp" />
+                        </FrameLayout>
+                        <TextView android:textAppearance="?textAppearanceTitleMedium" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/password_detection" android:layout_marginEnd="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/help_4_digits" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="?materialCardViewOutlinedStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_about_white_24dp" />
+                        </FrameLayout>
+                        <TextView android:textAppearance="?textAppearanceTitleMedium" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/battery_optimization" android:layout_marginEnd="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/help_dontkillmyapp_content" />
+                        <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/issues_card_battery_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/help_dontkillmyapp_btn" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Widget.Material3.Button.TextButton.Dialog.Flush" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="?materialCardViewOutlinedStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_about_white_24dp" />
+                        </FrameLayout>
+                        <TextView android:textAppearance="?textAppearanceTitleMedium" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/issues_card_pattern_title" android:layout_marginEnd="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/cardBatteryOptimizationExpanded" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/issues_card_pattern" />
+                        <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/issues_card_pattern_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/issues_card_pattern_btn" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Widget.Material3.Button.TextButton.Dialog.Flush" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="?materialCardViewOutlinedStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_about_white_24dp" />
+                        </FrameLayout>
+                        <TextView android:textAppearance="?textAppearanceTitleMedium" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/fingerprints" android:layout_marginEnd="8.0dip" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/issues_card_fingerprint" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

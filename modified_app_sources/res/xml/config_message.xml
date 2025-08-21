@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.harteg.crookcatcher.preferences.InfoPreference android:icon="@drawable/ic_about_white_24dp" android:summary="@string/config_message_info" android:order="1" />
+    <EditTextPreference android:icon="@drawable/ic_alert_message_white_32dp" android:title="@string/config_message_edit" android:key="key_alert_dialog_message" android:order="2" />
+</PreferenceScreen>
