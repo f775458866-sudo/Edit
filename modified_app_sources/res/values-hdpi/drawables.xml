@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="exo_icon_play">false</item>
+    <item type="drawable" name="exo_icon_repeat_all">false</item>
+    <item type="drawable" name="exo_icon_shuffle_off">false</item>
+    <item type="drawable" name="abc_scrubber_primary_mtrl_alpha">false</item>
+    <item type="drawable" name="abc_textfield_search_default_mtrl_alpha">false</item>
+    <item type="drawable" name="googleg_disabled_color_18">false</item>
+</resources>

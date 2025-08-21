@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/config_alert_notifications" android:key="key_show_alert_notification" android:widgetLayout="@layout/preference_material_switch_widget" android:defaultValue="false" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/config_hide_notifications_title" android:key="key_hide_notifications_on_lock_screen" android:summary="@string/config_hide_notifications_summary" android:widgetLayout="@layout/preference_material_switch_widget" android:dependency="key_show_alert_notification" android:defaultValue="false" />
+    <Preference android:title="@string/config_disable_background_service_notification_title" android:key="key_disable_service_notification" android:summary="@string/config_disable_background_service_notification_summary" android:widgetLayout="@layout/preference_widget_link" />
+</PreferenceScreen>

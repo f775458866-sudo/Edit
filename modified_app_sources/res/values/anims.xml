@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="anim" name="abc_tooltip_enter">false</item>
+    <item type="anim" name="btn_checkbox_to_checked_box_inner_merged_animation">false</item>
+    <item type="anim" name="btn_checkbox_to_checked_icon_null_animation">false</item>
+    <item type="anim" name="btn_radio_to_off_mtrl_dot_group_animation">false</item>
+    <item type="anim" name="cycle_2">false</item>
+    <item type="anim" name="fragment_fast_out_extra_slow_in">false</item>
+    <item type="anim" name="m3_motion_fade_exit">false</item>
+    <item type="anim" name="m3_side_sheet_enter_from_left">false</item>
+</resources>

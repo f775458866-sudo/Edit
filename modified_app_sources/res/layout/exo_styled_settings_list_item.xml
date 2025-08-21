@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/toolbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/statusBarPadding" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/toolbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_default_height_material" android:elevation="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tab_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" app:tabMode="fixed" style="@style/MyTabLayout" />
+        <com.google.android.material.card.MaterialCardView android:layout_gravity="end" android:id="@id/btnToolbarPro" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="100.0dip" app:cardElevation="0.0dip" app:rippleColor="@color/ripple_onDark">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/gradient_purple_pink_rounded" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="12.0dip">
+                <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PRO" android:fontFamily="@font/nexa_bold" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/baseline_shield_24" android:layout_marginStart="4.0dip" app:tint="#ffffffff" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.card.MaterialCardView android:id="@id/payment_pending_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorBackgroundFloating" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_about_white_24dp" app:tint="?colorOnBackground" />
+            </FrameLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnBackground" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/payment_pending_notice_message" android:layout_weight="1.0" android:paddingEnd="16.0dip" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:id="@id/failed_payment_pending_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="22.0sp" android:textColor="?colorOnError" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/payment_failed" android:drawablePadding="16.0dip" android:layout_weight="1.0" app:drawableStartCompat="@drawable/ic_alert" app:drawableTint="?colorOnError" />
+                <com.google.android.material.button.MaterialButton android:id="@id/failed_payment_pending_notice_btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@drawable/close" app:iconTint="?colorOnError" style="@style/Widget.Material3.Button.IconButton" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:id="@id/failed_payment_pending_notice_tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/failed_payment_pending_notice_message_support" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <com.google.android.material.button.MaterialButton android:textColor="?colorOnError" android:id="@id/failed_payment_pending_notice_btn_support" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_support" style="@style/Widget.Material3.Button.TextButton.Dialog" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.google.android.material.button.MaterialButton android:textAppearance="?textAppearanceButton" android:textColor="?colorOnErrorContainer" android:id="@id/failed_payment_pending_notice_btn_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_again" android:backgroundTint="?colorErrorContainer" style="@style/Widget.Material3.Button.TonalButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

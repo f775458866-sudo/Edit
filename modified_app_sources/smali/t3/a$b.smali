@@ -1,0 +1,30 @@
+.class final Lt3/a$b;
+.super Lt3/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lt3/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public final b:LG2/B;
+
+
+# direct methods
+.method public constructor <init>(ILG2/B;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lt3/a;-><init>(I)V
+
+    iput-object p2, p0, Lt3/a$b;->b:LG2/B;
+
+    return-void
+.end method

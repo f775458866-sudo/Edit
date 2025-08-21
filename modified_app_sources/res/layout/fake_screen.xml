@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fake_home_screen_full" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/pt_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fake_home_screen_full_pt" android:adjustViewBounds="true" />
+    <View android:id="@id/statusBarBackground" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/statusBarPadding" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.harteg.crookcatcher.preferences.InfoPreference android:icon="@drawable/ic_about_white_24dp" android:summary="@string/config_email_info" />
+    <com.harteg.crookcatcher.preferences.EmailPreference android:icon="@drawable/ic_email_symbol_white_32dp" android:title="@string/config_email_receiver_title" android:key="key_email_sender_recipient" android:summary="@string/summary_not_set" app:iconSpaceReserved="true" />
+    <com.harteg.crookcatcher.preferences.ProgressPreference android:icon="@drawable/send_white_32px" android:title="@string/config_send_test_email_title" android:key="key_email_send_test" app:iconSpaceReserved="true" />
+    <androidx.preference.SwitchPreferenceCompat android:icon="@drawable/ic_subject_white_32dp" android:title="@string/config_change_email_subject_title" android:key="key_email_subject_switch" android:summary="@string/config_change_email_subject_dialog" android:widgetLayout="@layout/preference_material_switch_widget" android:defaultValue="false" app:iconSpaceReserved="true" />
+</PreferenceScreen>

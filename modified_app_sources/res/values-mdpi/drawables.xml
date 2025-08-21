@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="exo_ic_chevron_right">false</item>
+    <item type="drawable" name="exo_ic_play_circle_filled">false</item>
+    <item type="drawable" name="abc_switch_track_mtrl_alpha">false</item>
+    <item type="drawable" name="notify_panel_notification_icon_bg">false</item>
+</resources>

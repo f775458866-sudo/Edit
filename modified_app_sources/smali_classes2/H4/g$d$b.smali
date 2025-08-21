@@ -1,0 +1,140 @@
+.class final synthetic LH4/g$d$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LL6/f;
+.implements Lkotlin/jvm/internal/n;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LH4/g$d;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1000
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic c:LH4/g;
+
+
+# direct methods
+.method constructor <init>(LH4/g;)V
+    .locals 0
+
+    iput-object p1, p0, LH4/g$d$b;->c:LH4/g;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c()Lk6/i;
+    .locals 7
+
+    new-instance v0, Lkotlin/jvm/internal/a;
+
+    iget-object v2, p0, LH4/g$d$b;->c:LH4/g;
+
+    const-string v5, "updateState(Lcoil3/compose/AsyncImagePainter$State;)V"
+
+    const/4 v6, 0x4
+
+    const/4 v1, 0x2
+
+    const-class v3, LH4/g;
+
+    const-string v4, "updateState"
+
+    invoke-direct/range {v0 .. v6}, Lkotlin/jvm/internal/a;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic emit(Ljava/lang/Object;Lo6/d;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, LH4/g$c;
+
+    invoke-virtual {p0, p1, p2}, LH4/g$d$b;->f(LH4/g$c;Lo6/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    instance-of v0, p1, LL6/f;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    instance-of v0, p1, Lkotlin/jvm/internal/n;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, Lkotlin/jvm/internal/n;->c()Lk6/i;
+
+    move-result-object v0
+
+    check-cast p1, Lkotlin/jvm/internal/n;
+
+    invoke-interface {p1}, Lkotlin/jvm/internal/n;->c()Lk6/i;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/t;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    return v1
+.end method
+
+.method public final f(LH4/g$c;Lo6/d;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, LH4/g$d$b;->c:LH4/g;
+
+    invoke-static {v0, p1, p2}, LH4/g$d;->c(LH4/g;LH4/g$c;Lo6/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {}, Lp6/b;->f()Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-ne p1, p2, :cond_0
+
+    return-object p1
+
+    :cond_0
+    sget-object p1, Lk6/M;->a:Lk6/M;
+
+    return-object p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    invoke-interface {p0}, Lkotlin/jvm/internal/n;->c()Lk6/i;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    return v0
+.end method

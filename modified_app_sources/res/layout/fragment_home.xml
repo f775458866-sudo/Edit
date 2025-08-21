@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/contentView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/contentHolder" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/home_logo_large" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/logo_large" app:tint="?colorPrimary" />
+                <ImageView android:layout_gravity="center" android:id="@id/home_logo_large_pro" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/logo_large_pro" app:tint="?colorPrimary" />
+                <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_billing_issue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="?colorOnError" android:gravity="center_vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_failed" />
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:id="@id/home_card_billing_issue_tv" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/billing_issue_message_grace" />
+                                <com.google.android.material.button.MaterialButton android:textColor="?colorOnErrorContainer" android:layout_gravity="end" android:id="@id/home_card_billing_issue_btn_fix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fix_payment" android:backgroundTint="?colorErrorContainer" style="@style/Widget.Material3.Button.TonalButton" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_pro_offer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorOnPrimary" app:cardElevation="0.0dip" app:rippleColor="@color/ripple_onDark" app:strokeColor="?colorPrimary" app:strokeWidth="4.0dip" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="32.0sp" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🚀" />
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <TextView android:textSize="26.0sp" android:textColor="?colorPrimary" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/homecard_pro_offer_title" android:fontFamily="@font/nexa_bold" />
+                                    <TextView android:textAppearance="?textAppearanceTitleMedium" android:textColor="?colorOnBackground" android:gravity="center_vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/homecard_pro_offer_message" android:layout_marginEnd="8.0dip" />
+                                    <com.google.android.material.card.MaterialCardView android:layout_gravity="start" android:id="@id/home_card_pro_offer_ends_in_card" android:focusable="true" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="100.0dip" app:cardElevation="0.0dip">
+                                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/gradient_purple_pink_rounded" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="12.0dip">
+                                            <TextView android:textColor="#ffffffff" android:id="@id/home_card_pro_offer_ends_in" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/homecard_pro_offer_ends_in" android:layout_weight="1.0" android:fontFamily="@font/nexa_bold" />
+                                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/round_hourglass_top_24" android:layout_marginStart="4.0dip" app:tint="#ffffffff" />
+                                        </LinearLayout>
+                                    </com.google.android.material.card.MaterialCardView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_remember_to_unsub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurfaceVariant" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnSurfaceVariant" android:gravity="center_vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remember_to_unsub_message" />
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <com.google.android.material.button.MaterialButton android:textColor="?colorOnSurfaceVariant" android:id="@id/home_card_remember_to_unsub_btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_close" style="@style/Widget.Material3.Button.TextButton.Dialog" />
+                                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                                    <com.google.android.material.button.MaterialButton android:id="@id/home_card_remember_to_unsub_btn_manage_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage_subscription" style="@style/Widget.Material3.Button.TextButton.Dialog" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_permissions_missing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_alert" app:tint="?colorOnError" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/notif_permissions_error_message" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="?colorOnError" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_website_message" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurface" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center" android:id="@id/home_message_text" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                                    <FrameLayout android:id="@id/home_message_arrow" android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="#ffffffff" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                                <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/home_message_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_ok" style="@style/Widget.Material3.Button.TextButton.Dialog" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_update" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurface" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_about_white_24dp" app:tint="?colorOnBackground" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnBackground" android:layout_gravity="center" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/a_new_update_is_available" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="?colorOnBackground" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_rate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurface" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star" app:tint="#ffffffff" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:layout_gravity="center" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/home_card_rate_title" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="#ffffffff" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_email" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_alert" app:tint="?colorOnError" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:layout_gravity="center" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/notification_email_aborted_message_settings" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="?colorOnError" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_location" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_location_off_24dp" app:tint="?colorOnError" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/notification_location_services_are_off_title" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="?colorOnError" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_location_permission_missing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_location_off_24dp" app:tint="?colorOnError" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/notification_location_perm_missing_title" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="?colorOnError" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_battery_optimization" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:layout_width="72.0dip" android:layout_height="wrap_content">
+                                        <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_alert" app:tint="?colorOnError" />
+                                    </FrameLayout>
+                                    <TextView android:textAppearance="?textAppearanceTitleMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/battery_optimization" android:layout_marginEnd="8.0dip" />
+                                </LinearLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:id="@id/home_card_battery_optimization_message" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text will be added in java" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+                                <com.google.android.material.button.MaterialButton android:textColor="?colorOnError" android:layout_gravity="end" android:id="@id/btn_battery_optimization" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/setup_battery_optimization_btn" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Widget.Material3.Button.TextButton.Dialog.Flush" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_drive_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:rippleColor="?colorOnErrorContainer" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/baseline_add_to_drive_24" app:tint="?colorOnError" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dialog_drive_error_message" android:layout_weight="1.0" />
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_arrow_right" app:tint="?colorOnError" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView android:id="@id/home_card_experimental_admin_missing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" style="?materialCardViewElevatedStyle">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent">
+                                    <ImageView android:layout_gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_alert" app:tint="?colorOnError" />
+                                </FrameLayout>
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/experimental_admin_missing_message" android:layout_weight="1.0" android:paddingEnd="16.0dip" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+            <com.harteg.crookcatcher.ui.AdminActivateSwitch android:id="@id/adminActivateSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:id="@id/home_card_help" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurface" style="?materialCardViewElevatedStyle">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help" android:drawablePadding="16.0dip" android:textDirection="locale" android:paddingStart="32.0dip" app:drawableStartCompat="@drawable/ic_help_white" />
+                </com.google.android.material.card.MaterialCardView>
+                <android.widget.Space android:layout_width="8.0dip" android:layout_height="0.0dip" />
+                <com.google.android.material.card.MaterialCardView android:id="@id/home_card_about" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurface" style="?materialCardViewElevatedStyle">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" android:drawablePadding="16.0dip" android:textDirection="locale" android:paddingStart="32.0dip" app:drawableStartCompat="@drawable/ic_about_white_24dp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:id="@id/home_card_uninstall" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorSurface" app:strokeColor="?colorError" style="?materialCardViewElevatedStyle">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uninstall_crookcatcher" android:drawablePadding="16.0dip" android:textDirection="locale" android:paddingStart="32.0dip" app:drawableStartCompat="@drawable/delete_24px" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/home_card_uninstall_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView android:layout_gravity="bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardBackgroundColor="?colorError" app:cardElevation="0.0dip" app:strokeWidth="0.0dip" style="?materialCardViewElevatedStyle">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="24.0dip">
+                        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="?colorOnError" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:text="@string/important" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorOnError" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/home_uninstall_notice" android:layout_weight="1.0" />
+                        <com.google.android.material.button.MaterialButton android:textColor="?colorOnError" android:id="@id/home_card_uninstall_notice_never" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/never_show_again" app:rippleColor="#66000000" style="@style/Widget.Material3.Button.TextButton" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/home_card_uninstall_notice_close" android:background="?selectableItemBackground" android:layout_width="72.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_24" android:paddingEnd="16.0dip" app:tint="?colorOnError" />
+                    </FrameLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <ImageView android:layout_gravity="start|bottom|center" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="-2.0dip" android:layout_marginBottom="80.0dip" android:src="@drawable/tooltip_arrow_black" android:layout_marginStart="48.0dip" app:tint="?colorError" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

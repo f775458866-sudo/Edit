@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Alert actions" app:layout="@layout/preference_category_no_line">
+        <Preference android:title="Take picture" android:key="dkey_take_picture" />
+        <Preference android:title="Test video recording" android:key="dkey_test_video" />
+        <Preference android:title="Test audio recording" android:key="dkey_record_audio" />
+        <Preference android:title="Play Alarm" android:key="dkey_play_alarm" />
+        <Preference android:title="Send test email" android:key="dkey_send_dummy_email" />
+        <Preference android:title="Exit and run alert" android:key="dkey_exit_and_run_alert" />
+        <Preference android:title="Number of pending emails" android:key="dkey_pending_emails" />
+        <Preference android:title="Delete all logs" android:key="dkey_delete_all_logs" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Billing &amp; Ads" app:layout="@layout/preference_category_no_line">
+        <Preference android:title="Pro status" android:key="dkey_pro_status" />
+        <Preference android:title="Discount offer: reset" android:key="dkey_discount_offer_reset" />
+        <Preference android:title="Discount offer: set to expire" android:key="dkey_discount_offer_expire" />
+        <Preference android:title="Cancel subscription" android:key="dkey_cancel_subscription" />
+        <Preference android:title="Consume permanent upgrade" android:key="dkey_consume_permanent" />
+        <Preference android:title="Look up gClient purchases" android:key="dkey_look_up_client_purchases" />
+        <androidx.preference.SwitchPreferenceCompat android:title="Show interstitials" android:key="dkey_show_interstitials" android:widgetLayout="@layout/preference_material_switch_widget" android:defaultValue="true" />
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="Show banner ads" android:key="dkey_show_banner" android:widgetLayout="@layout/preference_material_switch_widget" android:defaultValue="true" />
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="Enable pro features" android:key="key_billing_unsupported_pro_enabled" android:summary="for unsupported billing countries" android:widgetLayout="@layout/preference_material_switch_widget" android:defaultValue="false" />
+        <Preference android:title="Reset GDPR consent and restart" android:key="dkey_reset_consent" />
+        <Preference android:title="Open onboarding" android:key="dkey_open_onboarding" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other" app:layout="@layout/preference_category_no_line">
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="Blur images" android:key="key_blur_images" android:defaultValue="false" />
+        <Preference android:title="Open ProFrag in window" android:key="dkey_open_pro_frag" />
+        <Preference android:title="Clear shared preferences" android:key="dkey_clear_prefs" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/pro_faq_item" android:title="@string/pro_faq_cancel_how_Q" android:key="pro_faq_cancel_how" android:summary="@string/pro_faq_cancel_how_A" />
+    <Preference android:layout="@layout/pro_faq_item" android:title="@string/pro_faq_refund_Q" android:key="pro_faq_refund" android:summary="@string/pro_faq_refund_A" />
+    <Preference android:layout="@layout/pro_faq_item" android:title="@string/pro_faq_why_sub_Q" android:key="pro_faq_why_sub" android:summary="@string/pro_faq_why_sub_A" />
+    <Preference android:layout="@layout/pro_faq_item" android:title="@string/pro_faq_multiple_Q" android:key="pro_faq_multiple_devices" android:summary="@string/pro_faq_multiple_A" />
+    <Preference android:layout="@layout/pro_faq_item" android:title="@string/pro_faq_ios_Q" android:key="pro_faq_ios" android:summary="@string/pro_faq_ios_A" />
+    <Preference android:layout="@layout/pro_faq_item" android:title="@string/pro_faq_reboot_Q" android:key="pro_faq_reboot" android:summary="@string/pro_faq_reboot_A" />
+</PreferenceScreen>

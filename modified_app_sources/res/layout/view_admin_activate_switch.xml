@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/tv_admin_switch_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/nexa_bold" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/secondary_text_dark" android:id="@id/tv_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/nexa_bold" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:layout_gravity="end|center" android:id="@id/switch_compat_activate" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" custom:switchMinWidth="54.0dip" />
+</LinearLayout>

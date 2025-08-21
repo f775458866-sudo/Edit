@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="exo_ic_skip_next">false</item>
+    <item type="drawable" name="exo_ic_skip_previous">false</item>
+    <item type="drawable" name="exo_ic_subtitle_off">false</item>
+    <item type="drawable" name="exo_icon_play">false</item>
+    <item type="drawable" name="exo_icon_repeat_all">false</item>
+    <item type="drawable" name="exo_icon_rewind">false</item>
+</resources>

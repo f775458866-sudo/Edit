@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="?textAppearanceBodyLarge" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accessibility_permission_message_1" />
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:cardBackgroundColor="?colorSurfaceBright" app:rippleColor="@color/ripple_onDark" style="?materialCardViewElevatedStyle">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_about_white_24dp" app:tint="?colorOnSurface" />
+                        <TextView android:textAppearance="?textAppearanceBodyMedium" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/accessibility_dialog_info_header_1" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?textAppearanceBodyMedium" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/accessibility_dialog_info_content_1" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?textAppearanceBodyMedium" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/accessibility_dialog_info_header_2" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?textAppearanceBodyMedium" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/accessibility_dialog_info_content_2" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:textAppearance="?textAppearanceBodyLarge" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/accessibility_permission_message_2" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

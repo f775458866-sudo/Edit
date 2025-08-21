@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="0.0dip" android:layout_height="0.0dip" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:paddingTop="?dialogPreferredPadding" android:paddingBottom="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/premium_preference_bg_full" android:padding="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="32.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="🚀" />
+                    <TextView android:textAppearance="?textAppearanceDisplaySmall" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_to" android:maxLines="1" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" app:autoSizeMaxTextSize="32.0sp" app:autoSizeTextType="uniform" />
+                    <TextView android:textSize="36.0sp" android:textColor="?colorPrimary" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crookcatcher_pro" android:maxLines="1" android:fontFamily="@font/nexa_bold" app:autoSizeMaxTextSize="32.0sp" app:autoSizeTextType="uniform" />
+                    <View android:layout_gravity="center_horizontal" android:background="@drawable/rounded_corners_32dp" android:layout_width="64.0dip" android:layout_height="8.0dip" android:layout_marginTop="32.0dip" />
+                    <TextView android:textAppearance="?textAppearanceBodyLarge" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/pro_welcome_text2" />
+                    <com.google.android.material.button.MaterialButton android:textAppearance="?textAppearanceButton" android:layout_gravity="center_horizontal" android:id="@id/button" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/start_using_pro" android:textAllCaps="true" style="@style/Widget.Material3.Button" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

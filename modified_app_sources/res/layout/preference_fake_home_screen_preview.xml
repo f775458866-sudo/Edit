@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="32.0dip" android:clickable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:layout_width="256.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:elevation="50.0dip">
+        <ImageView android:id="@id/img_fake_screen_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/fake_home_screen_full" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/pt_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/fake_home_screen_full_pt" android:adjustViewBounds="true" />
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

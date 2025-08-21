@@ -1,0 +1,42 @@
+.class final Landroidx/compose/ui/layout/d;
+.super Landroidx/compose/ui/e$c;
+.source "SourceFile"
+
+# interfaces
+.implements Lp1/t;
+
+
+# instance fields
+.field private B:Lx6/l;
+
+
+# direct methods
+.method public constructor <init>(Lx6/l;)V
+    .locals 0
+
+    invoke-direct {p0}, Landroidx/compose/ui/e$c;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/ui/layout/d;->B:Lx6/l;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final k2(Lx6/l;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/compose/ui/layout/d;->B:Lx6/l;
+
+    return-void
+.end method
+
+.method public x(Ln1/s;)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose/ui/layout/d;->B:Lx6/l;
+
+    invoke-interface {v0, p1}, Lx6/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method

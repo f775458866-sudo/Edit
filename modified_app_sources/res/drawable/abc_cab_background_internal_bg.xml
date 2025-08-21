@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="0.0dip" android:layout_height="0.0dip" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:paddingTop="?dialogPreferredPadding" android:paddingBottom="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/premium_preference_bg_full" android:padding="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="32.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="👋" />
+                    <TextView android:textAppearance="?textAppearanceDisplaySmall" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_to" android:maxLines="1" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" app:autoSizeMaxTextSize="32.0sp" app:autoSizeTextType="uniform" />
+                    <TextView android:textSize="36.0sp" android:textColor="?colorPrimary" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crookcatcher_3_0" android:maxLines="1" android:fontFamily="@font/nexa_bold" app:autoSizeMaxTextSize="32.0sp" app:autoSizeTextType="uniform" />
+                    <View android:layout_gravity="center_horizontal" android:background="@drawable/rounded_corners_32dp" android:layout_width="64.0dip" android:layout_height="8.0dip" android:layout_marginTop="32.0dip" />
+                    <TextView android:textAppearance="?textAppearanceBodyLarge" android:gravity="start" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="32.0dip" android:text="@string/welcome_to_3_greeting" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minWidth="48.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/baseline_videocam_32px" app:tint="?colorPrimary" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="16.0dip">
+                            <TextView android:textAppearance="?textAppearanceBodyLarge" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_feature_video" android:drawablePadding="6.0dip" android:fontFamily="@font/nexa_bold" app:drawableEndCompat="@drawable/pro_badge_16dp" />
+                            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_to_3_audio_is_now_video" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minWidth="48.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/baseline_add_to_drive_24" app:tint="?colorPrimary" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="16.0dip">
+                            <TextView android:textAppearance="?textAppearanceBodyLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_feature_drive" android:drawablePadding="6.0dip" android:fontFamily="@font/nexa_bold" app:drawableEndCompat="@drawable/pro_badge_16dp" />
+                            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_feature_drive_sub" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minWidth="48.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/lab_profile_24px" app:tint="?colorPrimary" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="16.0dip">
+                            <TextView android:textAppearance="?textAppearanceBodyLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_logs_title" android:fontFamily="@font/nexa_bold" />
+                            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_logs_description" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minWidth="48.0dip">
+                        <TextView android:textSize="30.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✨" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="16.0dip">
+                            <TextView android:textAppearance="?textAppearanceBodyLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fresh_ui_title" android:fontFamily="@font/nexa_bold" />
+                            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fresh_ui_description" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textAppearance="?textAppearanceBodyLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/pricing_note_title" android:fontFamily="@font/nexa_bold" />
+                    <TextView android:text="@string/pricing_note_subscription_change" style="@style/BulletItem" />
+                    <TextView android:text="@string/pricing_note_pro_users" style="@style/BulletItem" />
+                    <TextView android:text="@string/pricing_note_support_and_access" style="@style/BulletItem" />
+                    <TextView android:id="@id/upgrade_at_original_price_notice" android:visibility="gone" android:text="@string/upgrade_at_original_price" style="@style/BulletItem" />
+                    <TextView android:textAppearance="?textAppearanceBodyLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/update_effort_message" />
+                    <TextView android:textAppearance="?textAppearanceBodyLarge" android:id="@id/pro_features_free_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/ps_pro_is_now_free_where_billing_is_unsupported" />
+                    <com.google.android.material.button.MaterialButton android:textAppearance="?textAppearanceButton" android:layout_gravity="center_horizontal" android:id="@id/button" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/let_s_go" android:textAllCaps="true" style="@style/Widget.Material3.Button.TonalButton" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

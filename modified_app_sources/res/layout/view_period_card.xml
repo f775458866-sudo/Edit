@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:foreground="?selectableItemBackground" app:cardBackgroundColor="@color/bg_very_dark" app:strokeColor="@color/md_theme_dark_primaryContainerStroke" app:strokeWidth="2.0dip">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="40.0sp" android:gravity="center" android:id="@id/tv_period_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:fontFamily="@font/nexa_bold" android:lineHeight="30.0dip" />
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/tv_period_unit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:fontFamily="@font/nexa_bold" android:lineHeight="30.0dip" />
+            <View android:background="@color/divider_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="16.0dip" />
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/tv_period_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:fontFamily="@font/nexa_bold" android:lineHeight="30.0dip" />
+            <com.google.android.material.button.MaterialButton android:textSize="14.0sp" android:layout_gravity="bottom" android:id="@id/btn_period_trial" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="32.0dip" android:textAllCaps="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="11.0sp" android:autoSizeMaxTextSize="14.0sp" app:cornerRadius="8.0dip" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@id/cv_period_discount" android:layout_width="wrap_content" android:layout_height="32.0dip" app:cardBackgroundColor="@color/md_theme_dark_primaryContainer" app:cardCornerRadius="100.0dip">
+        <TextView android:textColor="@color/md_theme_dark_onPrimaryContainer" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_period_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/nexa_light" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

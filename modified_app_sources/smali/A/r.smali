@@ -1,0 +1,151 @@
+.class public final enum LA/r;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+
+# static fields
+.field public static final enum c:LA/r;
+
+.field public static final enum d:LA/r;
+
+.field public static final enum f:LA/r;
+
+.field public static final enum g:LA/r;
+
+.field public static final enum i:LA/r;
+
+.field public static final enum j:LA/r;
+
+.field private static final synthetic o:[LA/r;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, LA/r;
+
+    const-string v1, "UNKNOWN"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, LA/r;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LA/r;->c:LA/r;
+
+    new-instance v0, LA/r;
+
+    const-string v1, "INACTIVE"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, LA/r;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LA/r;->d:LA/r;
+
+    new-instance v0, LA/r;
+
+    const-string v1, "SEARCHING"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, LA/r;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LA/r;->f:LA/r;
+
+    new-instance v0, LA/r;
+
+    const-string v1, "FLASH_REQUIRED"
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v2}, LA/r;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LA/r;->g:LA/r;
+
+    new-instance v0, LA/r;
+
+    const-string v1, "CONVERGED"
+
+    const/4 v2, 0x4
+
+    invoke-direct {v0, v1, v2}, LA/r;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LA/r;->i:LA/r;
+
+    new-instance v0, LA/r;
+
+    const-string v1, "LOCKED"
+
+    const/4 v2, 0x5
+
+    invoke-direct {v0, v1, v2}, LA/r;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, LA/r;->j:LA/r;
+
+    invoke-static {}, LA/r;->a()[LA/r;
+
+    move-result-object v0
+
+    sput-object v0, LA/r;->o:[LA/r;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method private static synthetic a()[LA/r;
+    .locals 6
+
+    sget-object v0, LA/r;->c:LA/r;
+
+    sget-object v1, LA/r;->d:LA/r;
+
+    sget-object v2, LA/r;->f:LA/r;
+
+    sget-object v3, LA/r;->g:LA/r;
+
+    sget-object v4, LA/r;->i:LA/r;
+
+    sget-object v5, LA/r;->j:LA/r;
+
+    filled-new-array/range {v0 .. v5}, [LA/r;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LA/r;
+    .locals 1
+
+    const-class v0, LA/r;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, LA/r;
+
+    return-object p0
+.end method
+
+.method public static values()[LA/r;
+    .locals 1
+
+    sget-object v0, LA/r;->o:[LA/r;
+
+    invoke-virtual {v0}, [LA/r;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [LA/r;
+
+    return-object v0
+.end method

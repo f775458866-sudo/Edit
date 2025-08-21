@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="exo_ic_chevron_left">false</item>
+    <item type="drawable" name="exo_icon_fastforward">false</item>
+    <item type="drawable" name="abc_btn_switch_to_on_mtrl_00012">false</item>
+    <item type="drawable" name="abc_list_pressed_holo_light">false</item>
+    <item type="drawable" name="googleg_disabled_color_18">false</item>
+    <item type="drawable" name="googleg_standard_color_18">false</item>
+</resources>

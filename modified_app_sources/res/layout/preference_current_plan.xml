@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:cardBackgroundColor="?colorSurface" app:cardCornerRadius="8.0dip" style="@style/Widget.Material3.CardView.Elevated">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <include layout="@layout/preference_item" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip">
+                    <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/btnCurrentPlanRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@drawable/round_refresh_24" style="@style/Widget.Material3.Button.IconButton" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/progressIndicator" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminateTint="?colorPrimary" />
+                </FrameLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:textColor="?colorOnErrorContainer" android:id="@id/btn_fix_payment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/fix_payment" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:backgroundTint="?colorErrorContainer" style="@style/Widget.Material3.Button.TonalButton" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

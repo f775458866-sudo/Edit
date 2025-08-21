@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/guideline_bottom" app:layout_constraintEnd_toEndOf="@id/guideline_right" app:layout_constraintStart_toStartOf="@id/guideline_left" app:layout_constraintTop_toTopOf="@id/guideline_top" app:layout_constraintWidth_max="300.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="@dimen/keyline_1" android:layout_marginBottom="@dimen/keyline_2" android:src="@mipmap/ic_launcher" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/pl_message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline_1" android:minHeight="24.0dip" />
+                <com.harteg.crookcatcher.ui.PatternLock.PatternView android:id="@id/pl_pattern" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.1" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.9" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.1" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="center" android:id="@id/pl_forgot_pattern_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline_2" android:text="@string/pl_forgot_pattern" android:textAllCaps="true" style="@style/Widget.Material3.Button" />
+</LinearLayout>
