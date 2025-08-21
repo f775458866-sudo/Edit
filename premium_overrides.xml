@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Feature Overrides -->
+    <bool name="pro_version">true</bool>
+    <bool name="premium_unlocked">true</bool>
+    <bool name="free_version">false</bool>
+    <bool name="trial_expired">false</bool>
+    <bool name="subscription_active">true</bool>
+    
+    <!-- Billing System Overrides -->
+    <bool name="billing_enabled">false</bool>
+    <bool name="billing_disabled">true</bool>
+    <bool name="purchases_verified">true</bool>
+    <bool name="license_valid">true</bool>
+    
+    <!-- Ads and Analytics Overrides -->
+    <bool name="ads_enabled">false</bool>
+    <bool name="analytics_enabled">false</bool>
+    
+    <!-- App Configuration -->
+    <string name="app_version_type">pro</string>
+    <string name="license_status">valid</string>
+    <string name="subscription_status">active</string>
+</resources>
