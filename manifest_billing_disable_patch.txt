@@ -1,0 +1,29 @@
+# AndroidManifest.xml Billing Disable Patch
+# Instructions for disabling billing activities and services
+
+# Activities to disable or remove:
+# - com.android.billingclient.api.ProxyBillingActivity
+# - com.android.billingclient.api.ProxyBillingActivityV2  
+# - com.revenuecat.purchases.ui.revenuecatui.activity.PaywallActivity
+# - com.harteg.crookcatcher.ProExpiredActivity (redirect to ProUnlockedActivity)
+
+# Services to disable:
+# - com.android.vending.billing.InAppBillingService.BIND
+# - com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND
+
+# Permissions to remove or make optional:
+# - com.android.vending.BILLING
+# - com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+
+# Add these meta-data overrides to disable billing:
+# <meta-data android:name="billing_disabled" android:value="true" />
+# <meta-data android:name="premium_unlocked" android:value="true" />
+# <meta-data android:name="pro_version" android:value="true" />
+
+# Google Ads Application ID override (set to invalid to disable ads):
+# <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="disabled" />
+
+# Firebase configuration overrides:
+# <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false" />
+# <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="false" />
+# <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="false" />
