@@ -1,0 +1,25 @@
+{
+  "billing_config": {
+    "enabled": false,
+    "override_license_check": true,
+    "force_premium": true,
+    "bypass_paywall": true
+  },
+  "premium_features": {
+    "all_features_unlocked": true,
+    "pro_version": true,
+    "subscription_active": true,
+    "trial_active": false,
+    "expired": false
+  },
+  "revenue_cat": {
+    "disabled": true,
+    "mock_entitlements": true,
+    "paywall_disabled": true
+  },
+  "google_play_billing": {
+    "disabled": true,
+    "mock_purchases": true,
+    "force_owned": true
+  }
+}
